@@ -1,0 +1,1283 @@
+@keyframes mov_bas_haut
+{
+    0%
+    {
+        transform: translateY(20%);
+        opacity:0.5;
+    }
+
+    100%
+    {
+        transform: translateY(75%);
+        opacity:1;
+    }
+}
+
+body
+{
+    width: 100%;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body p
+{
+    font-family: Robotoregular;
+}
+
+.titres
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titres h2
+{
+    color: #e95143;
+    font-family: Pacifico;
+    font-size: 2.6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*---------------------------------
+Header menu
+---------------------------------*/
+
+header #logotoul #logo2
+{
+    height: 38px;
+    width: auto;
+}
+
+#top
+{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 8px 10px -6px rgba(0,0,0,0.42);
+}
+
+.menu_ham
+{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.menu_ham span
+{
+    height: 3px;
+    background: linear-gradient(45deg, rgba(221,0,107,1) 0%, rgb(235,105,7) 100%);
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+.menu_ham span:before
+{
+    content:'';
+    height: 3px;
+    background: linear-gradient(45deg, rgba(221,0,107,1) 0%, rgb(235,105,7) 100%);
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+
+.menu_ham span:after
+{
+    content:'';
+    height: 3px;
+    background: linear-gradient(45deg, rgba(221,0,107,1) 0%, rgb(235,105,7) 100%);
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.menu
+{
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+}
+
+.menu a
+{
+    color: rgb(235,105,7);
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1em;
+    text-align: left;
+    display: block;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.menu a:hover
+{
+    transform: scale(1.1);
+}
+
+.menu #logo
+{
+    font-family: Pacifico;
+    font-size: 1.3em;
+}
+
+.nav
+{
+    margin-left: -100%;
+    position: absolute;
+    margin-top: 50px;
+    transition-duration: 0.9s;
+}
+
+.nav_open
+{
+    margin-left: 0;
+    position: absolute;
+    margin-top: 50px;
+    transition-duration: 0.5s;
+    z-index: 99;
+}
+
+/*---------------------------------
+Header menu
+---------------------------------*/
+
+#banniere
+{
+    width: 100%;
+    height: 600px;
+    top:65px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url(toulouse.jpg) center center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 8px 10px -6px rgba(0,0,0,0.42);
+}
+
+#banniere_description
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-grow: 1;
+    z-index: 10;
+    text-align: center;
+
+}
+
+#banniere_description h1
+{
+    color: #ffffff;
+    word-wrap: break-word;
+    line-height: normal;
+    margin: 0px;
+    font-size: 4.3em;
+    font-family: Pacifico;
+    font-weight: lighter;
+}
+
+#banniere_description h1 strong
+{
+    color: rgba(227,0,107,1);
+    font-size: 1.5em;
+}
+
+#banniere_description p
+{
+    color: #ffffff;
+    word-wrap: break-word;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: Ranga;
+    font-weight: lighter;
+}
+
+#calque
+{
+    background-color: rgba(0,0,0,0.2);
+    position:absolute;
+    content:'';
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index: 8;
+}
+
+#fleche_bas i
+{
+    position: absolute;
+    left: calc(52% - 40px);
+    color: #fff;
+    font-size: 2.1em;
+    top: calc(85% - 20px);
+    z-index: 99;
+    animation: mov_bas_haut 1s infinite alternate;
+}
+
+/*---------------------------------
+Section turoriel
+---------------------------------*/
+
+#sliderResa
+{
+    width: 100%;
+    height: auto;
+}
+
+#reservation
+{
+    width: 95%;
+    height: 600px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 40px;
+    margin-left: auto;
+    margin-right: auto;
+    top:90px;
+    box-shadow: 0 1px 10px -6px rgba(0,0,0,0.42), 0 1px 10px 0 rgba(0,0,0,0.12), 0 4px 5px -2px rgba(0,0,0,0.1);
+}
+
+#slider
+{
+    height: 455px;
+    width: 90%;
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.slide
+{
+    flex-shrink: 0;
+    width: 100%;
+    height: inherit;
+    transition: all 1s ease-in-out;
+}
+
+.slide img
+{
+    width: 100%;
+}
+
+.guide
+{
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(221,0,107,1) 0%, rgba(235,105,7,0.9) 100%);
+    border-radius: 0 200px 200px 0;
+}
+.guide h4
+{
+    font-family: Pacifico;
+    color: #fff;
+    font-size: 2.2em;
+    margin: 90px 30px 15px 30px;
+    padding: 30px 30px 10px 30px;
+}
+
+.guide p
+{
+    font-family: roboto;
+    font-size: 1.4em;
+    margin: 0 30px;
+    padding-left: 35px;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.guide strong
+{
+    font-family: Pacifico;
+}
+
+#fleche_gauche i
+{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.3em;
+    background-color: rgba(233, 81, 67, 0.6);
+    border-radius: 60px;
+    position: absolute;
+    top:calc(52%);
+    left: 8px;
+}
+
+#fleche_gauche i:hover
+{
+    background-color: transparent;
+    color: rgba(233, 81, 67, 0.8);
+    cursor: pointer;
+}
+
+#fleche_droite i
+{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 1.3em;
+    background-color:rgba(233, 81, 67, 0.6);
+    border-radius: 60px;
+    position: absolute;
+    top:calc(52%);
+    right: 8px;
+}
+
+#fleche_droite i:hover
+{
+    background-color: transparent;
+    color: rgba(233, 81, 67, 0.8);
+    cursor: pointer;
+}
+
+#play
+{
+    position: absolute;
+    top: 96%;
+    left: 48%;
+}
+
+#play i
+{
+    width: 35px;
+    text-align: center;
+    color: rgba(233, 81, 67, 0.8);
+    font-size: 1em;
+}
+
+#play i:hover
+{
+    cursor: pointer;
+    transform: scale(1.8);
+}
+
+#stop
+{
+    position: absolute;
+    top: 96%;
+    left: 51%;
+}
+
+#stop i
+{
+    width: 35px;
+    text-align: center;
+    color: rgba(233, 81, 67, 0.8);
+    font-size: 1em;
+}
+
+#stop i:hover
+{
+    cursor: pointer;
+    transform: scale(1.8);
+}
+
+#fleche_bas2 i
+{
+    position: absolute;
+    left: calc(50% - 12px);
+    color: rgb(235,105,7);
+    font-size: 2.1em;
+    bottom: calc(-5% - 10px);
+    animation: mov_bas_haut 1s infinite alternate;
+}
+
+
+/*----------------------------
+Section map et réservation
+----------------------------*/
+#mapResa
+{
+    width: 100%;
+    height: auto;
+}
+
+#resavelo
+{
+    width: 97%;
+    padding: 10px 20px;
+    position: relative;
+    top:160px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#article2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#map
+{
+    width: 90%;
+    height: 590px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px 40px;
+    z-index: 0;
+}
+
+#canvas
+{
+    z-index: 10;
+    border: 2px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+#nomStation p
+{
+    font-family: Roboto;
+    font-size: 1em;
+    color: #777777;
+    line-height: 1.6em;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#nomStation div strong
+{
+    font-size: 1.2em;
+}
+
+#nomStation p strong
+{
+    color: #e95143;
+}
+
+#nomStation div
+{
+    font-family: Roboto;
+    font-size: 1em;
+    color: #e95143;
+    line-height: 1.6em;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#signature
+{
+    height: auto;
+    width: 320px;
+    position: absolute;
+    top: 20%;
+    right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 40px;
+    z-index: 9;
+    box-shadow: 0 1px 10px -6px rgba(0,0,0,0.42), 0 1px 10px 0 rgba(0,0,0,0.12), 0 4px 5px -2px rgba(0,0,0,0.1);
+
+}
+
+#signature #name, #prenom
+{
+    width: 250px;
+    height: 30px;
+    background-color: #e6e6e6;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: Roboto;
+    font-size: 0.8em;
+    margin: 0px 15px 10px 15px;
+}
+
+#signature #resa
+{
+    width: 260px;
+    height: 30px;
+    background-color: #e95143;
+    color: #fff;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    margin: 5px 30px;
+}
+
+#aideNom, #aidePrenom
+{
+    font-family: roboto;
+    font-size: 0.9em;
+}
+
+#crossH
+{
+    color: #e6e6e6;
+    text-align: right;
+    font-size: 0.6em;
+}
+
+#crossH:hover
+{
+    color: #8F8F8F;
+}
+
+#signature #resa:hover
+{
+    background-color: #E95102;
+}
+
+#signature #valider, #effacer
+{
+    width: 100px;
+    height: 25px;
+    background-color: #e95143;
+    color: #fff;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 0.9em;
+    text-align: center;
+    border: none;
+}
+
+#signature #valider:hover, #effacer:hover
+{
+    background-color: #E95102;
+}
+
+#signature #valider:disabled {
+    background-color: grey;
+}
+
+#signature h3
+{
+    font-family: Pacifico;
+    color: #e95143;
+    font-size: 1.8em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.buttons
+{
+    margin-top: 10px;
+}
+
+#formulaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sign
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------------------------
+Timer
+--------------------------*/
+
+#resaInfos
+{
+    width: 100%;
+    height: auto;
+}
+
+#infos
+{
+    width: 90%;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 148px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px -6px rgba(0,0,0,0.42), 0 1px 10px 0 rgba(0,0,0,0.12), 0 4px 5px -2px rgba(0,0,0,0.1);
+}
+
+#timer
+{
+    font-family: roboto;
+    padding: 5px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+#station
+{
+    font-family: Roboto;
+    font-size: 1em;
+    color: #e95143;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+#adresse
+{
+    font-family: Roboto;
+    font-size: 1em;
+    color: #e95143;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+#temps
+{
+    font-family: roboto;
+    font-size: 1.1em;
+    color: #777777;
+}
+
+#temps #minutes, #secondes
+{
+    color: #e95143;
+}
+
+#btnAnnuler
+{
+    width: 100px;
+    height: 25px;
+    background-color: #e95143;
+    color: #fff;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 0.9em;
+    text-align: center;
+    border: none;
+}
+
+#btnAnnuler:hover
+{
+    background-color: #E95102;
+
+}
+
+@media all and (min-width: 300px) and (max-width: 320px)
+{
+    body
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_ham span
+    {
+        top: 23px;
+        left: 15px;
+    }
+
+    #ban
+    {
+        width: 100%;
+    }
+
+    #map
+    {
+        height: 400px;
+    }
+
+    #signature
+    {
+        width: 86%;
+        right: auto;
+        top: calc(118% - 80px);
+        margin-bottom: 30px;
+    }
+
+    /*--------------------------
+    Bannière
+    --------------------------*/
+    #top
+    {
+        box-shadow: 0 2px 20px -7px rgba(0,0,0,0.32);
+    }
+
+    #banniere{
+        width: 100%;
+        height: 144px;
+        box-shadow: none;
+        margin-bottom: 30px;
+    }
+
+    #banniere_description h1 strong, #banniere_description h1
+    {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+
+    #banniere_description h1
+    {
+        color:#e95143;
+        padding: 0;
+        font-size: 2.6em;
+    }
+
+    #sousTitre
+    {
+        display: none;
+    }
+
+    #banniere_description p
+    {
+        display: none;
+    }
+
+    .titres
+    {
+        text-align: center;
+
+    }
+
+    .titres h2
+    {
+        font-size: 1.3em;
+    }
+
+    #fleche_bas i, #fleche_bas2 i
+    {
+        display: none;
+    }
+
+    /*--------------------------
+    Slider
+    --------------------------*/
+
+    #reservation
+    {
+        height: 470px;
+        top: 65px;
+    }
+    #slider{
+        height: 320px;
+        width: 100%;
+    }
+
+    .slide img
+    {
+        width: 100%;
+        height: 320px;
+    }
+
+    .guide
+    {
+        width: 100%;
+        border-radius: 12px 60px 12px 60px;
+    }
+
+    .guide h4
+    {
+        font-size:1.6em;
+        margin: 65px 15px 10px;
+        padding: 0 0 0 12px;
+        width: 80%;
+    }
+
+    .guide p
+    {
+        font-size: 1.2em;
+        margin: 0;
+        padding-left: 25px;
+        width: 80%;
+    }
+
+    #fleche_gauche i
+    {
+        top: calc(87%);
+        left: 20px;
+    }
+
+    #fleche_droite i
+    {
+        top: calc(87%);
+        right: 20px;
+    }
+
+    #play
+    {
+        position: absolute;
+        top: 91%;
+        left: 40%;
+    }
+
+    #stop
+    {
+        position: absolute;
+        top: 91%;
+        left: 50%;
+    }
+
+    /*-------------------------
+    Section Map
+    --------------------------*/
+    #resavelo
+    {
+        padding: 0;
+        top: 100px;
+    }
+
+    #infos
+    {
+        width: 95%;
+        left: 0;
+        top: 88px;
+    }
+
+    #signature #resa
+    {
+        margin: 4px;
+    }
+}
+
+@media all and (min-width: 321px) and (max-width: 767px)
+{
+    body
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_ham span
+    {
+        top: 23px;
+        left: 15px;
+    }
+
+    #ban
+    {
+        width: 100%;
+    }
+
+    #map
+    {
+        height: 400px;
+    }
+
+    #signature
+    {
+        width: 86%;
+        right: 0;
+        top: calc(118% - 80px);
+        margin-bottom: 30px;
+    }
+
+    /*--------------------------
+    Bannière
+    --------------------------*/
+    #top
+    {
+        box-shadow: 0 2px 20px -7px rgba(0,0,0,0.32);
+    }
+
+    #banniere{
+        width: 100%;
+        height: 144px;
+        box-shadow: none;
+        margin-bottom: 30px;
+    }
+
+    #banniere_description h1 strong, #banniere_description h1
+    {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+
+    #banniere_description h1
+    {
+        color:#e95143;
+        padding: 0;
+        font-size: 2.6em;
+    }
+
+    #sousTitre
+    {
+        display: none;
+    }
+
+    #banniere_description p
+    {
+        display: none;
+    }
+
+    .titres
+    {
+        text-align: center;
+
+    }
+
+    .titres h2
+    {
+        font-size: 1.4em;
+    }
+
+    #fleche_bas i, #fleche_bas2 i
+    {
+        display: none;
+    }
+
+    /*--------------------------
+    Slider
+    --------------------------*/
+
+    #reservation
+    {
+        height: 500px;
+        top: 65px;
+    }
+    #slider{
+        height: 320px;
+        width: 100%;
+    }
+
+    .slide img
+    {
+        width: 100%;
+        height: 320px;
+    }
+
+    .guide
+    {
+        width: 100%;
+        border-radius: 12px 60px 12px 60px;
+    }
+
+    .guide h4
+    {
+        font-size:1.6em;
+        margin: 65px 15px 10px;
+        padding: 0 0 0 12px;
+        width: 80%;
+    }
+
+    .guide p
+    {
+        font-size: 1.2em;
+        margin: 0;
+        padding-left: 25px;
+        width: 80%;
+    }
+
+    #fleche_gauche i
+    {
+        top: calc(84%);
+        left: 20px;
+    }
+
+    #fleche_droite i
+    {
+        top: calc(84%);
+        right: 20px;
+    }
+
+    #play
+    {
+        position: absolute;
+        top: 88%;
+        left: 40%;
+    }
+
+    #stop
+    {
+        position: absolute;
+        top: 88%;
+        left: 50%;
+    }
+
+    /*-------------------------
+    Section Map
+    --------------------------*/
+    #resavelo
+    {
+        padding: 0;
+        top: 100px;
+    }
+
+    #infos
+    {
+        width: 95%;
+        left: 0;
+        top: 88px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    body
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_ham
+    {
+        margin-left: 40px;
+        margin-top: 12px;
+    }
+
+    #map
+    {
+        height: 400px;
+    }
+
+    #signature
+    {
+        width: 90%;
+        right: calc(1% - -4px);
+        top: calc(118% - 80px);
+        margin-bottom: 30px;
+    }
+
+    /*--------------------------
+    Bannière
+    --------------------------*/
+    #top
+    {
+        box-shadow: 0 2px 20px -7px rgba(0,0,0,0.32);
+    }
+
+    #ban{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #banniere{
+        height: 300px;
+        box-shadow: none;
+    }
+
+    #banniere_description h1 strong, #banniere_description h1
+    {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+
+    #banniere_description h1
+    {
+        color:#e95143;
+        padding: 0;
+        font-size: 2.6em;
+    }
+
+    #sousTitre
+    {
+        display: none;
+    }
+
+    #banniere_description p
+    {
+        display: none;
+    }
+
+    .titres
+    {
+        text-align: center;
+
+    }
+
+    .titres h2
+    {
+        font-size: 2.2em;
+    }
+
+    #fleche_bas i, #fleche_bas2 i
+    {
+        display: none;
+    }
+
+    /*--------------------------
+    Slider
+    --------------------------*/
+
+    #reservation
+    {
+        height: 500px;
+        top: 65px;
+    }
+    #slider{
+        height: 320px;
+        width: 100%;
+    }
+
+    .slide img
+    {
+        width: 100%;
+        height: 320px;
+    }
+
+    .guide
+    {
+        width: 80%;
+    }
+
+    .guide h4
+    {
+        font-size:2em;
+        margin: 65px 15px 10px;
+        padding: 0 0 0 12px;
+        width: 80%;
+    }
+
+    .guide p
+    {
+        font-size: 1.4em;
+        margin: 0;
+        padding-left: 25px;
+        width: 80%;
+    }
+
+    #fleche_gauche i
+    {
+        top: calc(86%);
+        left: 20px;
+    }
+
+    #fleche_droite i
+    {
+        top: calc(86%);
+        right: 20px;
+    }
+
+    #play
+    {
+        position: absolute;
+        top: 90%;
+        left: 40%;
+    }
+
+    #stop
+    {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+    }
+
+    /*-------------------------
+    Section Map
+    --------------------------*/
+    #resavelo
+    {
+        padding: 0;
+        top: 100px;
+    }
+
+    #nomStation
+    {
+        font-size: 1.3em;
+    }
+
+    #infos
+    {
+        width: 95%;
+        left: 0;
+        top: 100px;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1150px)
+{
+    #slider
+    {
+        height: 340px;
+        width: 88%;
+    }
+
+    #reservation
+    {
+        height: 500px;
+    }
+
+    #stop
+    {
+        top: 94%;
+    }
+
+    #play
+    {
+        top:94%;
+    }
+
+    #fleche_droite i {
+        height: 40px;
+        width: 40px;
+        line-height: 42px;
+        right: 4px;
+    }
+
+    #fleche_gauche i {
+        height: 40px;
+        width: 40px;
+        line-height: 42px;
+        left: 4px;
+    }
+
+    .guide
+    {
+        width: 60%;
+    }
+
+    .guide h4 {
+        margin: 35px 30px 15px 30px;
+    }
+
+    #infos {
+        width: 86%;
+    }
+
+    #resavelo {
+        width: 96%;
+    }
+}
